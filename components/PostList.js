@@ -24,7 +24,7 @@ export const allPostsQueryVars = {
   first: 10,
 }
 
-export default function PostList({ client }) {
+export default function PostList() {
   const { loading, error, data, fetchMore, networkStatus } = useQuery(
     ALL_POSTS_QUERY,
     {
@@ -32,8 +32,7 @@ export default function PostList({ client }) {
       // Setting this value to true will make the component rerender when
       // the "networkStatus" changes, so we are able to know if it is fetching
       // more data
-      notifyOnNetworkStatusChange: true,
-      client
+      notifyOnNetworkStatusChange: true
     }
   )
 
