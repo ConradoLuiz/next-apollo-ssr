@@ -1,7 +1,7 @@
 # Apollo Example
 
 ## **Warning**
-## This is a modification from the original [with apollo example](https://github.com/vercel/next.js/tree/canary/examples/with-apollo) from the next.js repo that uses getInitialProps to achieve SSR only on initial page load. Use with caution.
+## This is a modification from the original [with apollo example](https://github.com/vercel/next.js/tree/canary/examples/with-apollo) from the next.js repo that uses getServerSideProps to achieve SSR. Use with caution.
 
 [Apollo](https://www.apollographql.com/client/) is a GraphQL client that allows you to easily query the exact data you need from a GraphQL server. In addition to fetching and mutating data, Apollo analyzes your queries and their results to construct a client-side cache of your data, which is kept up to date as further queries and mutations are run.
 
