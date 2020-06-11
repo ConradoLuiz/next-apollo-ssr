@@ -40,11 +40,9 @@ IndexPage.getInitialProps = async (context) => {
     variables: allPostsQueryVars,
   });
 
-  return {
-    props: {
-      initialApolloState: apolloClient.cache.extract(),
-    }
-  }
+  // Since the component uses useQuery from apollo hooks, 
+  // it automatically gets the data from the apollo store
+  
 }
 
 
